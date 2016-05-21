@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="pref_period_sync_interval_default_value">60</integer>
+    <integer name="number_picker_min_value">3</integer>
+    <integer name="number_picker_max_value">500</integer>
+</resources>

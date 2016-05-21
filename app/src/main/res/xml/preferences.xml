@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <SwitchPreference
+        android:key="pref_auto_sync"
+        android:title="@string/pref_auto_sync"
+        android:summary="@string/pref_auto_sync_summ"
+        android:defaultValue="true" />
+    <SwitchPreference
+        android:dependency="pref_auto_sync"
+        android:key="pref_period_sync"
+        android:title="@string/pref_period_sync"
+        android:summary="@string/pref_period_sync_summ"
+        android:defaultValue="true" />
+    <cn.edu.pku.kingarcher.wefund.util.NumberPickerPreference
+        android:dependency="pref_period_sync"
+        android:key="pref_period_sync_interval"
+        android:title="@string/pref_period_sync_interval"
+        android:summary="@string/pref_period_sync_interval_summ"
+        android:defaultValue="@integer/pref_period_sync_interval_default_value"
+        app:min_value="@integer/number_picker_min_value"
+        app:max_value="@integer/number_picker_max_value"/>
+</PreferenceScreen>

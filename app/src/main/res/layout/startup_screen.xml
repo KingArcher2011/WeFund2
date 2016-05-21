@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/startup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="5dp"
+    android:background="@color/startup_background"
+    android:text="WeFund"
+    android:textColor="#FFFFFF"
+    android:textSize="30sp"
+    android:textStyle="bold|italic"
+    android:gravity="center"
+    android:visibility="invisible">
+</TextView>
